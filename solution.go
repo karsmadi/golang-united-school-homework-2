@@ -10,11 +10,11 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-func CalcSquare(sideLen float64, sidesNum uint) float64 {
-	const SidesTriangle uint = 3
-	const SidesSquare uint = 4
-	const SidesCircle uint = 0
+const SidesTriangle uint = 3
+const SidesSquare uint = 4
+const SidesCircle uint = 0
 
+func CalcSquare(sideLen float64, sidesNum uint) float64 {
 	if sidesNum == SidesSquare {
 		return sideLen * sideLen
 	} else if sidesNum == SidesTriangle {
